@@ -15,7 +15,6 @@ exports.createNote = async (req, res, next) => {
 exports.getNotes = async (req, res, next) => {
   try {
     const notes = await notesService.getAll(req.user.id);
-    console.log("Came to get all notes");
     res.status(200).json(notes);
   } catch (err) {
     next(err);
