@@ -15,6 +15,7 @@ exports.createNote = async (req, res, next) => {
 exports.getNotes = async (req, res, next) => {
   try {
     const notes = await notesService.getAll(req.user.id);
+    console.log("Came to get all notes");
     res.status(200).json(notes);
   } catch (err) {
     next(err);
@@ -139,8 +140,30 @@ exports.shareNote = async (req, res) => {
 
 exports.searchNotes = async (req, res, next) => {
   try {
-    const results = await notesService.search(req.user.id, req.query.q);
-    res.status(200).json(results);
+    const query = req.query.keyword; // Get the search keyword from the request
+    if (!query) {
+      return res.status(400).json({
+        success: false,
+        message: "Search query cannot be empty.",
+      });
+    }
+
+    // Pass the query to the service to perform the search
+    const results = await notesService.search(req.user.id, query);
+
+    // If no notes found with the keyword
+    if (results.length === 0) {
+      return res.status(404).json({
+        success: false,
+        message: `No notes found with the keyword ${query}`,
+      });
+    }
+
+    // Return the filtered results
+    res.status(200).json({
+      success: true,
+      data: results,
+    });
   } catch (err) {
     next(err);
   }

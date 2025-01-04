@@ -46,6 +46,13 @@ exports.share = async (userId, noteId, sharedWith) => {
   return note;
 };
 
-exports.search = async (userId, query) => {
-  return Note.find({ owner: userId, $text: { $search: query } });
+exports.search = async (userId, keyword) => {
+  if (!keyword) {
+    throw new Error("Keyword is required");
+  }
+
+  return Note.find({
+    owner: userId,
+    $text: { $search: keyword },
+  }).select("title content");
 };
