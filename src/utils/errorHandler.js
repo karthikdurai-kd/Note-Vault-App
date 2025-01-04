@@ -11,7 +11,7 @@ const errorHandler = (err, req, res, next) => {
     message: message,
   });
 
-  // Optionally log the error for debugging purposes
+  // Loging the error for debugging
   console.error(err);
 };
 
