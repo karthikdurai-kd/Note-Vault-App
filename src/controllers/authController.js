@@ -38,6 +38,7 @@ const authService = require("../services/authService");
  *         content:
  *           application/json:
  *             schema:
+ *               $ref: "#/components/schemas/User"
  *               type: object
  *               properties:
  *                 id:
@@ -95,6 +96,7 @@ exports.signup = async (req, res, next) => {
  *         content:
  *           application/json:
  *             schema:
+ *               $ref: "#/components/schemas/User"
  *               type: object
  *               properties:
  *                 token:
