@@ -1,0 +1,328 @@
+{
+	"info": {
+		"_postman_id": "de2825f5-4774-456a-bb7f-e601015efb7d",
+		"name": "Speer-Backend-Assessment-Notes-API-Collection Production",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10674413"
+	},
+	"item": [
+		{
+			"name": "User SignUp API",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"username\": \"Gayathri\",\n  \"password\": \"sample@2025@2025\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://speer-backend-assessment.onrender.com/api/auth/signup",
+					"protocol": "https",
+					"host": [
+						"speer-backend-assessment",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Login API",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"username\": \"Gayathri\",\n  \"password\": \"sample@2025@2025\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://speer-backend-assessment.onrender.com/api/auth/login",
+					"protocol": "https",
+					"host": [
+						"speer-backend-assessment",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch All Notes API",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3N2IwMTk0Y2I2YjVkYmI5MDhkNzVlZSIsImlhdCI6MTczNjExNDYyMywiZXhwIjoxNzM2MTE4MjIzfQ.DyT7rAoVm7NCEwJPe1B-pT4iFFkSlSlVbRUAaGyKsMo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://speer-backend-assessment.onrender.com/api/notes",
+					"protocol": "https",
+					"host": [
+						"speer-backend-assessment",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"notes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch Single Note API",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3N2IwMTk0Y2I2YjVkYmI5MDhkNzVlZSIsImlhdCI6MTczNjExNDYyMywiZXhwIjoxNzM2MTE4MjIzfQ.DyT7rAoVm7NCEwJPe1B-pT4iFFkSlSlVbRUAaGyKsMo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://speer-backend-assessment.onrender.com/api/notes/677b0258cb6b5dbb908d75f5",
+					"protocol": "https",
+					"host": [
+						"speer-backend-assessment",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"notes",
+						"677b0258cb6b5dbb908d75f5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Note API",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3N2IwMTk0Y2I2YjVkYmI5MDhkNzVlZSIsImlhdCI6MTczNjExNDYyMywiZXhwIjoxNzM2MTE4MjIzfQ.DyT7rAoVm7NCEwJPe1B-pT4iFFkSlSlVbRUAaGyKsMo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\": \"Note 4\",\n  \"content\": \"Created for checking this note 4 in production\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://speer-backend-assessment.onrender.com/api/notes",
+					"protocol": "https",
+					"host": [
+						"speer-backend-assessment",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"notes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Note API",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3N2IwMTk0Y2I2YjVkYmI5MDhkNzVlZSIsImlhdCI6MTczNjExNDYyMywiZXhwIjoxNzM2MTE4MjIzfQ.DyT7rAoVm7NCEwJPe1B-pT4iFFkSlSlVbRUAaGyKsMo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\": \"Updated Note\",\n  \"content\": \"Updated content of the note\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://speer-backend-assessment.onrender.com/api/notes/677b0263cb6b5dbb908d75f9",
+					"protocol": "https",
+					"host": [
+						"speer-backend-assessment",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"notes",
+						"677b0263cb6b5dbb908d75f9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Note API",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3N2IwMTk0Y2I2YjVkYmI5MDhkNzVlZSIsImlhdCI6MTczNjExNDYyMywiZXhwIjoxNzM2MTE4MjIzfQ.DyT7rAoVm7NCEwJPe1B-pT4iFFkSlSlVbRUAaGyKsMo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://speer-backend-assessment.onrender.com/api/notes/677b0263cb6b5dbb908d75f9",
+					"protocol": "https",
+					"host": [
+						"speer-backend-assessment",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"notes",
+						"677b0263cb6b5dbb908d75f9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Share Note API",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3N2IwMTk0Y2I2YjVkYmI5MDhkNzVlZSIsImlhdCI6MTczNjExNDYyMywiZXhwIjoxNzM2MTE4MjIzfQ.DyT7rAoVm7NCEwJPe1B-pT4iFFkSlSlVbRUAaGyKsMo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"sharedWith\": [\"677b018ecb6b5dbb908d75eb\"]\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://speer-backend-assessment.onrender.com/api/notes/677b0248cb6b5dbb908d75f3/share",
+					"protocol": "https",
+					"host": [
+						"speer-backend-assessment",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"notes",
+						"677b0248cb6b5dbb908d75f3",
+						"share"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search Keyword API",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3N2IwMTk0Y2I2YjVkYmI5MDhkNzVlZSIsImlhdCI6MTczNjExNDYyMywiZXhwIjoxNzM2MTE4MjIzfQ.DyT7rAoVm7NCEwJPe1B-pT4iFFkSlSlVbRUAaGyKsMo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://speer-backend-assessment.onrender.com/api/notes/search?keyword=production",
+					"protocol": "https",
+					"host": [
+						"speer-backend-assessment",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"notes",
+						"search"
+					],
+					"query": [
+						{
+							"key": "keyword",
+							"value": "production"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
