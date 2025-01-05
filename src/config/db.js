@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 
+// Connection method to MongoDB
 const connectDB = async () => {
   try {
     await mongoose.connect(process.env.MONGO_URI);
@@ -10,6 +11,7 @@ const connectDB = async () => {
   }
 };
 
+// Closing MongoDB Connection method
 const disconnectDB = async () => {
   await mongoose.connection.close();
 };

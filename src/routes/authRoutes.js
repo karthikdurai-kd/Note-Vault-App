@@ -3,6 +3,7 @@ const authController = require("../controllers/authController");
 
 const router = express.Router();
 
+// User Authentication API Endpoints
 router.post("/signup", authController.signup);
 router.post("/login", authController.login);
 

@@ -16,7 +16,7 @@ describe("Notes Routes Integration Tests", () => {
     });
   });
 
-  // Before each test, set up a user and log them in to get the token
+  // Before each test, setting up a user and log them in to get the token
   beforeEach(async () => {
     // Create a test user
     testUser = new User({ username: "testuser", password: "password123" });
@@ -40,6 +40,7 @@ describe("Notes Routes Integration Tests", () => {
     await mongoose.connection.close();
   });
 
+  // Create Note Test
   test("Create a Note", async () => {
     const noteData = { title: "Test Note", content: "This is a test note" };
 
@@ -53,8 +54,8 @@ describe("Notes Routes Integration Tests", () => {
     expect(response.body.content).toBe(noteData.content);
   });
 
+  // Fetch All Note Test
   test("Get all Notes", async () => {
-    // Create a note first
     await request(app)
       .post("/api/notes")
       .set("Authorization", `Bearer ${token}`)
@@ -68,8 +69,8 @@ describe("Notes Routes Integration Tests", () => {
     expect(response.body.length).toBeGreaterThan(0);
   });
 
+  // Fetch Note by ID Test
   test("Get Note by ID", async () => {
-    // Create a note first
     const createdNote = await request(app)
       .post("/api/notes")
       .set("Authorization", `Bearer ${token}`)
@@ -85,8 +86,8 @@ describe("Notes Routes Integration Tests", () => {
     expect(response.body._id).toBe(noteId);
   });
 
+  // Update Note Test
   test("Update a Note", async () => {
-    // Create a note first
     const createdNote = await request(app)
       .post("/api/notes")
       .set("Authorization", `Bearer ${token}`)
@@ -108,8 +109,8 @@ describe("Notes Routes Integration Tests", () => {
     expect(response.body.content).toBe(updatedData.content);
   });
 
+  // Delete Note Test
   test("Delete a Note", async () => {
-    // Create a note first
     const createdNote = await request(app)
       .post("/api/notes")
       .set("Authorization", `Bearer ${token}`)
@@ -124,8 +125,8 @@ describe("Notes Routes Integration Tests", () => {
     expect(response.status).toBe(204);
   });
 
+  // Share Note Test
   test("Share a Note", async () => {
-    // Create a note first
     const createdNote = await request(app)
       .post("/api/notes")
       .set("Authorization", `Bearer ${token}`)
@@ -143,8 +144,8 @@ describe("Notes Routes Integration Tests", () => {
     expect(response.body.message).toBe("Note shared successfully");
   });
 
+  // Search Note Test
   test("Search Notes", async () => {
-    // Create a note first
     await request(app)
       .post("/api/notes")
       .set("Authorization", `Bearer ${token}`)

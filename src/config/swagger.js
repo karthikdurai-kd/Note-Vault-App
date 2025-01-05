@@ -1,5 +1,6 @@
 const swaggerJSDoc = require("swagger-jsdoc");
 
+// Swagger Setup with Authorzation token option
 const swaggerOptions = {
   definition: {
     openapi: "3.0.0",

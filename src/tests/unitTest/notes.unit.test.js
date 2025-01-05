@@ -1,5 +1,7 @@
 const notesController = require("../../controllers/notesController");
 const notesService = require("../../services/notesService");
+
+// Mocking methods from notesService.js file
 jest.mock("../../services/notesService");
 
 describe("Notes Controller", () => {
@@ -19,6 +21,7 @@ describe("Notes Controller", () => {
     next = jest.fn();
   });
 
+  // Unit Test for Create Note API Endpoint
   describe("Create Note", () => {
     it("should create a note and return status 201", async () => {
       req.body = { title: "Note Title", content: "Note Content" };
@@ -40,6 +43,7 @@ describe("Notes Controller", () => {
     });
   });
 
+  // Unit Test for Fetch All Notes API End Point
   describe("Get Notes", () => {
     it("should return a list of notes", async () => {
       const notes = [
@@ -64,6 +68,7 @@ describe("Notes Controller", () => {
     });
   });
 
+  // Unit Test for Fetch Note By ID API Endpoint
   describe("Get Note by ID", () => {
     it("should return a specific note", async () => {
       req.params.id = "note123";
@@ -90,6 +95,7 @@ describe("Notes Controller", () => {
     });
   });
 
+  // Unit Test for Search Notes API Endpoint
   describe("Search Notes", () => {
     it("should return search results", async () => {
       req.query.keyword = "search";

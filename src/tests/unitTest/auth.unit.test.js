@@ -1,9 +1,11 @@
 const authController = require("../../controllers/authController");
 const authService = require("../../services/authService");
 
+// Mocking metods from authService.js file
 jest.mock("../../services/authService");
 
 describe("Auth Controller", () => {
+  // Unit Test for SignUp API Endpoint
   describe("Signup", () => {
     it("should create a user and return status 201", async () => {
       const req = {
@@ -49,6 +51,7 @@ describe("Auth Controller", () => {
     });
   });
 
+  // Unit Test for Login API Endpoint
   describe("Login", () => {
     it("should login the user and return a token", async () => {
       const req = {

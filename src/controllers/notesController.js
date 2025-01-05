@@ -265,7 +265,7 @@ exports.shareNote = async (req, res) => {
     const noteId = req.params.id; // Extract note ID from route params
     const { sharedWith } = req.body; // Extract sharedWith users from request body
 
-    // Ensure sharedWith is an array
+    // Check whether sharedWith is an array
     if (!Array.isArray(sharedWith)) {
       return res.status(400).json({
         success: false,
@@ -273,7 +273,7 @@ exports.shareNote = async (req, res) => {
       });
     }
 
-    // Validate and convert user IDs to ObjectId
+    // Validate and convert user IDs to ObjectId for iterating
     const objectIds = [];
     for (const userId of sharedWith) {
       if (!mongoose.Types.ObjectId.isValid(userId)) {
@@ -294,7 +294,7 @@ exports.shareNote = async (req, res) => {
       });
     }
 
-    // Ensure that the note has a user field populated
+    // Checking that note has a user field populated
     if (!note.owner || !note.owner._id) {
       return res.status(400).json({
         success: false,
@@ -303,7 +303,7 @@ exports.shareNote = async (req, res) => {
       });
     }
 
-    // Ensure that the note belongs to the authenticated user
+    // Checking whether note belongs to the authenticated user
     if (note.owner._id.toString() !== req.user.id) {
       return res.status(403).json({
         success: false,
@@ -311,7 +311,7 @@ exports.shareNote = async (req, res) => {
       });
     }
 
-    // Check that the users in sharedWith exist
+    // Check  whether the users has sharedWith Array
     const users = await User.find({ _id: { $in: objectIds } });
     if (users.length !== sharedWith.length) {
       const existingIds = users.map((user) => user._id.toString());

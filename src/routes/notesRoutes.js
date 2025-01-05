@@ -6,6 +6,7 @@ const router = express.Router();
 
 router.use(authMiddleware);
 
+// Notes API Endpoints
 router.get("/search", notesController.searchNotes);
 router.get("/", notesController.getNotes);
 router.get("/:id", notesController.getNoteById);

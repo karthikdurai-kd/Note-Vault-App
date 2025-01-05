@@ -2,6 +2,7 @@ const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
 const User = require("../models/userModel");
 
+// Register User Service method
 exports.registerUser = async ({ username, password }) => {
   const existingUser = await User.findOne({ username });
   if (existingUser) {
@@ -16,18 +17,19 @@ exports.registerUser = async ({ username, password }) => {
   return { id: user._id, username: user.username };
 };
 
+// Login User Service method
 exports.loginUser = async ({ username, password }) => {
   const user = await User.findOne({ username });
   if (!user) {
     const error = new Error("Invalid credentials");
-    error.statusCode = 400; // Staus Code 400 for invalid credentials
+    error.statusCode = 400; // Staus Code 400 for invalid username
     throw error;
   }
 
   const isValidPassword = await bcrypt.compare(password, user.password);
   if (!isValidPassword) {
     const error = new Error("Invalid credentials");
-    error.statusCode = 400; // Again, use 400 for invalid credentials
+    error.statusCode = 400; // Staus Code 400 for invalid password
     throw error;
   }
 

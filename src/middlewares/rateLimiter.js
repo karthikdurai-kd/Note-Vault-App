@@ -1,5 +1,6 @@
 const rateLimit = require("express-rate-limit");
 
+// Setting up rate limitter to avoid callback loop by the client
 module.exports = rateLimit({
   windowMs: 15 * 60 * 1000, // 15 minutes time frame
   max: 100, // limiting each user to 100 requests per windowMs

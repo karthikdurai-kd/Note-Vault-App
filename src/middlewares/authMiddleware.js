@@ -1,5 +1,6 @@
 const jwt = require("jsonwebtoken");
 
+// Auth Middleware to fetch the token and user id from the request
 module.exports = (req, res, next) => {
   const token = req.headers.authorization?.split(" ")[1];
   if (!token) return res.status(401).json({ error: "Access denied" });
