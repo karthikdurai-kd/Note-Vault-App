@@ -8,6 +8,7 @@ const notesRoutes = require("./routes/notesRoutes");
 const throttleMiddleware = require("./middlewares/throttleMiddleware");
 
 const app = express();
+require("dotenv").config();
 
 // Adding middlewares
 app.use(express.json());

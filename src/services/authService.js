@@ -4,7 +4,11 @@ const User = require("../models/userModel");
 
 exports.registerUser = async ({ username, password }) => {
   const existingUser = await User.findOne({ username });
-  if (existingUser) throw new Error("User already exists");
+  if (existingUser) {
+    const error = new Error("User already exists");
+    error.statusCode = 400; // Status code 400 for bad request errors like duplicate users
+    throw error;
+  }
 
   const user = new User({ username, password });
   await user.save();
@@ -14,10 +18,18 @@ exports.registerUser = async ({ username, password }) => {
 
 exports.loginUser = async ({ username, password }) => {
   const user = await User.findOne({ username });
-  if (!user) throw new Error("Invalid credentials");
+  if (!user) {
+    const error = new Error("Invalid credentials");
+    error.statusCode = 400; // Staus Code 400 for invalid credentials
+    throw error;
+  }
 
   const isValidPassword = await bcrypt.compare(password, user.password);
-  if (!isValidPassword) throw new Error("Invalid credentials");
+  if (!isValidPassword) {
+    const error = new Error("Invalid credentials");
+    error.statusCode = 400; // Again, use 400 for invalid credentials
+    throw error;
+  }
 
   return jwt.sign({ id: user._id }, process.env.JWT_SECRET, {
     expiresIn: "1h",

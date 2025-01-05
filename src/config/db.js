@@ -10,4 +10,8 @@ const connectDB = async () => {
   }
 };
 
-module.exports = connectDB;
+const disconnectDB = async () => {
+  await mongoose.connection.close();
+};
+
+module.exports = { connectDB, disconnectDB };
