@@ -241,3 +241,9 @@ This will execute all integration tests using Jest and Supertest and display the
 - **JWT Authentication**: Secure JWT tokens are used to authenticate and authorize users.
 - **Secure Headers**: Security headers are managed with the `helmet` middleware.
 - **Environment Variables**: Sensitive information like the JWT secret and MongoDB URI are stored securely in `.env`.
+
+# API Documentation
+
+You can explore the API documentation using Swagger UI [here](https://speer-backend-assessment.onrender.com/api-docs/).
+
+Alternatively, you can import the Postman collection using [this link](https://github.com/karthikdurai-kd/Speer-Backend-Assessment/blob/main/docs/Speer-Backend-Assessment-Notes-API-Collection%20Production.postman_collection.json).
