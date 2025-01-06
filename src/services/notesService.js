@@ -44,7 +44,7 @@ exports.getAll = async (userId) => {
 // Fetch Single Note By ID Service method
 exports.getById = async (userId, noteId) => {
   if (!mongoose.Types.ObjectId.isValid(noteId)) {
-    const error = new Error("Invalid note ID format");
+    const error = new Error("Invalid note ID");
     error.statusCode = 400; // Bad Request
     throw error;
   }
@@ -62,7 +62,7 @@ exports.getById = async (userId, noteId) => {
 // Update Note By ID Service method
 exports.update = async (userId, noteId, { title, content }) => {
   if (!mongoose.Types.ObjectId.isValid(noteId)) {
-    const error = new Error("Invalid note ID format");
+    const error = new Error("Invalid note ID");
     error.statusCode = 400; // Bad Request
     throw error;
   }
@@ -85,7 +85,7 @@ exports.update = async (userId, noteId, { title, content }) => {
 // Delete Note By ID Service method
 exports.delete = async (userId, noteId) => {
   if (!mongoose.Types.ObjectId.isValid(noteId)) {
-    const error = new Error("Invalid note ID format");
+    const error = new Error("Invalid note ID");
     error.statusCode = 400; // Bad Request
     throw error;
   }
@@ -109,7 +109,7 @@ exports.share = async (userId, noteId, sharedWith) => {
 
   // Validate note ID format
   if (!mongoose.Types.ObjectId.isValid(noteId)) {
-    const error = new Error("Invalid note ID format");
+    const error = new Error("Invalid note ID");
     error.statusCode = 400; // Bad Request
     throw error;
   }
