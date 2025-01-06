@@ -286,7 +286,7 @@ This will execute all integration tests using Jest and Supertest and display the
 
 ---
 
-## **Folder Structure**
+### **Folder Structure**
 
 <img width="370" alt="Screenshot 2025-01-04 at 10 45 15 PM" src="https://github.com/user-attachments/assets/fee2a000-8cfd-40b7-89c2-900777f3b134" />
 
@@ -298,6 +298,8 @@ This will execute all integration tests using Jest and Supertest and display the
 - **JWT Authentication**: Secure JWT tokens are used to authenticate and authorize users.
 - **Secure Headers**: Security headers are managed with the `helmet` middleware.
 - **Environment Variables**: Sensitive information like the JWT secret and MongoDB URI are stored securely in `.env`.
+
+---
 
 ### **Explore the APIs**
 
