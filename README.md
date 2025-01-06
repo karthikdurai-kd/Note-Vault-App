@@ -1,10 +1,59 @@
 # **Speer Backend Assessment Project**
 
-## **Overview**
+### **Overview**
 
 Speer Backend Assessment Project provides secure, scalable APIs built using Node.js and Express. It enables users to create, manage, share, and search notes. Key features include user authentication, rate limiting, request throttling, and seamless integration with MongoDB for persistent data storage.
 
-### **Key Features**
+---
+
+### **Architecture Diagram**
+
+<img width="870" alt="Screenshot 2025-01-05 at 7 55 20 PM" src="https://github.com/user-attachments/assets/3d196566-8736-434e-ac2d-1e338cc4db4f" />
+
+---
+
+### **Key Components**
+
+1. **Client**
+
+   - Acts as the entry point for users to interact with the backend services.
+   - Sends API requests for authentication, note management, sharing, and search functionalities.
+   - Receives JWT tokens for authentication and relevant responses for actions.
+
+2. **Rate Limiting Middleware**
+
+   - Protects the server from overuse by restricting excessive API requests.
+
+3. **Throttling Middleware**
+
+   - Introduces delay in processing requests when an excessive load is detected.
+
+4. **Authentication Layer**
+
+   - Handles secure user login and sign-up operations.
+   - Stores user credentials securely in the database after hashing with `bcrypt.js`.
+
+5. **CRUD Operations Layer**
+
+   - Provides APIs to create, read, update, and delete notes.
+   - Handles database interactions for storing and retrieving notes.
+
+6. **Note Sharing**
+
+   - Allows users to share notes with others by updating shared user information.
+   - Provides APIs to manage shared notes effectively.
+
+7. **Search Notes**
+
+   - Implements efficient search functionalities to find notes based on user queries.
+   - Returns relevant results based on search criteria.
+
+8. **MongoDB**
+   - Database for storaging user credentials, notes, and sharing details.
+
+---
+
+### **Features**
 
 - **User Authentication**: Secure user sign-up and login with JWT-based authentication.
 - **Note Management**: CRUD operations for notes, allowing users to create, update, delete, and retrieve notes.
@@ -12,7 +61,9 @@ Speer Backend Assessment Project provides secure, scalable APIs built using Node
 - **Search Notes**: Advanced keyword search functionality to find notes efficiently.
 - **Rate Limiting & Throttling**: Prevents overloading by limiting requests to API endpoints and implementing throttling.
 
-## **Tech Stack**
+---
+
+### **Tech Stack**
 
 - **Backend**: `Node.js` with `Express.js`
 - **Database**: `MongoDB` with `Mongoose ORM`
@@ -21,6 +72,8 @@ Speer Backend Assessment Project provides secure, scalable APIs built using Node
 - **Request Throttling**: Custom throttle middleware
 - **Password Hashing**: `bcrypt.js`
 - **Environment Variables**: `dotenv` for secure management of secrets
+
+---
 
 ### **Choice of Technologies**
 
@@ -34,7 +87,9 @@ Speer Backend Assessment Project provides secure, scalable APIs built using Node
 
 - **Supertest & Jest**: I chose Supertest and Jest for unit and integration testing. Jest is a powerful testing framework and Supertest simplifies HTTP calls to test the API endpoints.
 
-## **Getting Started**
+---
+
+### **Getting Started**
 
 ### **Prerequisites**
 
@@ -229,7 +284,7 @@ This will execute all integration tests using Jest and Supertest and display the
 
 ---
 
-### **Folder Structure**
+## **Folder Structure**
 
 <img width="370" alt="Screenshot 2025-01-04 at 10 45 15 PM" src="https://github.com/user-attachments/assets/fee2a000-8cfd-40b7-89c2-900777f3b134" />
 
@@ -242,7 +297,7 @@ This will execute all integration tests using Jest and Supertest and display the
 - **Secure Headers**: Security headers are managed with the `helmet` middleware.
 - **Environment Variables**: Sensitive information like the JWT secret and MongoDB URI are stored securely in `.env`.
 
-# API Documentation
+### API Documentation
 
 You can explore the API documentation using Swagger UI [here](https://speer-backend-assessment.onrender.com/api-docs/).
 
