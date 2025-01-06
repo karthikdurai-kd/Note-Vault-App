@@ -133,6 +133,26 @@ Speer Backend Assessment Project provides secure, scalable APIs built using Node
 
 ---
 
+### **Deployment Details**
+
+1. **Hosting Platform**:
+
+   - Speer Backend Assessment project APIs are deployed on **Render**.
+
+2. **Deployment URL**:
+
+   - The live backend API can be accessed at: **[https://speer-backend-assessment.onrender.com](https://speer-backend-assessment.onrender.com)**
+
+3. **API Documentation**:
+
+   - API documentation is available through Swagger UI.
+   - **Swagger UI URL**: **[https://speer-backend-assessment.onrender.com/api-docs](https://speer-backend-assessment.onrender.com/api-docs)**
+
+4. **Postman Collection**:
+   - **[Download Postman Collection](https://github.com/karthikdurai-kd/Speer-Backend-Assessment/blob/main/postman_collection/Speer-Backend-Assessment-Notes-API-Collection%20Production.postman_collection.json)**
+
+---
+
 ### **API Endpoints**
 
 #### **Authentication API Endpoints**
