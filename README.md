@@ -304,4 +304,4 @@ This will execute all integration tests using Jest and Supertest and display the
 ### **Explore the APIs**
 
 - **API Documentation**: [Swagger UI](https://speer-backend-assessment.onrender.com/api-docs/)
-- **Postman Collection**: [Download Here](https://github.com/karthikdurai-kd/Speer-Backend-Assessment/blob/main/docs/Speer-Backend-Assessment-Notes-API-Collection%20Production.postman_collection.json)
+- **Postman Collection**: [Download Here](https://github.com/karthikdurai-kd/Speer-Backend-Assessment/blob/main/postman_collection/Speer-Backend-Assessment-Notes-API-Collection%20Production.postman_collection.json)
