@@ -65,13 +65,15 @@ Speer Backend Assessment Project provides secure, scalable APIs built using Node
 
 ### **Tech Stack**
 
-- **Backend**: `Node.js` with `Express.js`
-- **Database**: `MongoDB` with `Mongoose ORM`
-- **Authentication**: `JWT` (JSON Web Tokens)
-- **Rate Limiting**: `express-rate-limit`
-- **Request Throttling**: Custom throttle middleware
-- **Password Hashing**: `bcrypt.js`
-- **Environment Variables**: `dotenv` for secure management of secrets
+| **Category**         | **Technology**          |
+| -------------------- | ----------------------- |
+| **Backend**          | Node.js with Express.js |
+| **Database**         | MongoDB with Mongoose   |
+| **Authentication**   | JWT                     |
+| **Password Hashing** | bcrypt.js               |
+| **Middleware**       | express-rate-limit      |
+| **Environment**      | dotenv                  |
+| **Testing**          | Jest, Supertest         |
 
 ---
 
@@ -297,8 +299,7 @@ This will execute all integration tests using Jest and Supertest and display the
 - **Secure Headers**: Security headers are managed with the `helmet` middleware.
 - **Environment Variables**: Sensitive information like the JWT secret and MongoDB URI are stored securely in `.env`.
 
-### API Documentation
+### **Explore the APIs**
 
-You can explore the API documentation using Swagger UI [here](https://speer-backend-assessment.onrender.com/api-docs/).
-
-Alternatively, you can import the Postman collection using [this link](https://github.com/karthikdurai-kd/Speer-Backend-Assessment/blob/main/docs/Speer-Backend-Assessment-Notes-API-Collection%20Production.postman_collection.json).
+- **API Documentation**: [Swagger UI](https://speer-backend-assessment.onrender.com/api-docs/)
+- **Postman Collection**: [Download Here](https://github.com/karthikdurai-kd/Speer-Backend-Assessment/blob/main/docs/Speer-Backend-Assessment-Notes-API-Collection%20Production.postman_collection.json)
