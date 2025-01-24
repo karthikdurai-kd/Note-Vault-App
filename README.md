@@ -141,12 +141,12 @@ Note Vault App provides secure, scalable APIs built using Node.js and Express. I
 
 2. **Deployment URL**:
 
-   - The live backend API can be accessed at: **[https://speer-backend-assessment.onrender.com](https://speer-backend-assessment.onrender.com)**
+   - The live backend API can be accessed at: **[https://note-vault-app.onrender.com](https://note-vault-app.onrender.com)**
 
 3. **API Documentation**:
 
    - API documentation is available through Swagger UI.
-   - **Swagger UI URL**: **[https://speer-backend-assessment.onrender.com/api-docs](https://speer-backend-assessment.onrender.com/api-docs)**
+   - **Swagger UI URL**: **[https://note-vault-app.onrender.com/api-docs/](https://note-vault-app.onrender.com/api-docs/)**
 
 4. **Postman Collection**:
    - **[Download Postman Collection](https://github.com/karthikdurai-kd/Speer-Backend-Assessment/blob/main/postman_collection/Speer-Backend-Assessment-Notes-API-Collection%20Production.postman_collection.json)**
@@ -317,5 +317,5 @@ This will execute all integration tests using Jest and Supertest and display the
 
 ### **Explore the APIs**
 
-- **API Documentation**: [Swagger UI](https://speer-backend-assessment.onrender.com/api-docs/)
+- **API Documentation**: [Swagger UI](https://note-vault-app.onrender.com/api-docs/)
 - **Postman Collection**: [Download Here](https://github.com/karthikdurai-kd/Speer-Backend-Assessment/blob/main/postman_collection/Speer-Backend-Assessment-Notes-API-Collection%20Production.postman_collection.json)

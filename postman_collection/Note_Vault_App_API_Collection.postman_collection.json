@@ -13,7 +13,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"username\": \"Gayathri\",\n  \"password\": \"sample@2025@2025\"\n}",
+					"raw": "{\n  \"username\": \"Radha\",\n  \"password\": \"sample@2025@2025\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -21,10 +21,10 @@
 					}
 				},
 				"url": {
-					"raw": "https://speer-backend-assessment.onrender.com/api/auth/signup",
+					"raw": "https://note-vault-app.onrender.com/api/auth/signup",
 					"protocol": "https",
 					"host": [
-						"speer-backend-assessment",
+						"note-vault-app",
 						"onrender",
 						"com"
 					],
@@ -52,10 +52,10 @@
 					}
 				},
 				"url": {
-					"raw": "https://speer-backend-assessment.onrender.com/api/auth/login",
+					"raw": "https://note-vault-app.onrender.com/api/auth/login",
 					"protocol": "https",
 					"host": [
-						"speer-backend-assessment",
+						"note-vault-app",
 						"onrender",
 						"com"
 					],
@@ -76,7 +76,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3N2IwMTk0Y2I2YjVkYmI5MDhkNzVlZSIsImlhdCI6MTczNjE0MzU3MiwiZXhwIjoxNzM2MTQ3MTcyfQ.Ah0JNaPK1c7nawpZvlub0eIl-e5zPRvORpI0G_8i3Bc",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3N2IwMTk0Y2I2YjVkYmI5MDhkNzVlZSIsImlhdCI6MTczNzc1MDA1NiwiZXhwIjoxNzM3NzUzNjU2fQ.DSgzm9FdbfXeWR3vzE7CeKrQZ3t80m9H4W27DroLOJU",
 							"type": "string"
 						}
 					]
@@ -84,10 +84,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://speer-backend-assessment.onrender.com/api/notes",
+					"raw": "https://note-vault-app.onrender.com/api/notes",
 					"protocol": "https",
 					"host": [
-						"speer-backend-assessment",
+						"note-vault-app",
 						"onrender",
 						"com"
 					],
@@ -115,10 +115,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://speer-backend-assessment.onrender.com/api/notes/677b0258cb6b5dbb908d75f5",
+					"raw": "https://note-vault-app.onrender.com/api/notes/677b0258cb6b5dbb908d75f5",
 					"protocol": "https",
 					"host": [
-						"speer-backend-assessment",
+						"note-vault-app",
 						"onrender",
 						"com"
 					],
@@ -156,10 +156,10 @@
 					}
 				},
 				"url": {
-					"raw": "https://speer-backend-assessment.onrender.com/api/notes",
+					"raw": "https://note-vault-app.onrender.com/api/notes",
 					"protocol": "https",
 					"host": [
-						"speer-backend-assessment",
+						"note-vault-app",
 						"onrender",
 						"com"
 					],
@@ -196,10 +196,10 @@
 					}
 				},
 				"url": {
-					"raw": "https://speer-backend-assessment.onrender.com/api/notes/677b0263cb6b5dbb908d75f9",
+					"raw": "https://note-vault-app.onrender.com/api/notes/677b0263cb6b5dbb908d75f9",
 					"protocol": "https",
 					"host": [
-						"speer-backend-assessment",
+						"note-vault-app",
 						"onrender",
 						"com"
 					],
@@ -228,10 +228,10 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "https://speer-backend-assessment.onrender.com/api/notes/677b74c5d55f5eccbd32ea6b",
+					"raw": "https://note-vault-app.onrender.com/api/notes/677b74c5d55f5eccbd32ea6b",
 					"protocol": "https",
 					"host": [
-						"speer-backend-assessment",
+						"note-vault-app",
 						"onrender",
 						"com"
 					],
@@ -269,10 +269,10 @@
 					}
 				},
 				"url": {
-					"raw": "https://speer-backend-assessment.onrender.com/api/notes/677b0248cb6b5dbb908d75f3/share",
+					"raw": "https://note-vault-app.onrender.com/api/notes/677b0248cb6b5dbb908d75f3/share",
 					"protocol": "https",
 					"host": [
-						"speer-backend-assessment",
+						"note-vault-app",
 						"onrender",
 						"com"
 					],
@@ -302,10 +302,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://speer-backend-assessment.onrender.com/api/notes/search?keyword=production",
+					"raw": "https://note-vault-app.onrender.com/api/notes/search?keyword=production",
 					"protocol": "https",
 					"host": [
-						"speer-backend-assessment",
+						"note-vault-app",
 						"onrender",
 						"com"
 					],
