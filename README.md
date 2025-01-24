@@ -149,7 +149,7 @@ Note Vault App provides secure, scalable APIs built using Node.js and Express. I
    - **Swagger UI URL**: **[https://note-vault-app.onrender.com/api-docs/](https://note-vault-app.onrender.com/api-docs/)**
 
 4. **Postman Collection**:
-   - **[Download Postman Collection](https://github.com/karthikdurai-kd/Speer-Backend-Assessment/blob/main/postman_collection/Speer-Backend-Assessment-Notes-API-Collection%20Production.postman_collection.json)**
+   - **[Download Postman Collection](https://github.com/karthikdurai-kd/Note-Vault-App/blob/main/postman_collection/Note_Vault_App_API_Collection.postman_collection.json)**
 
 ---
 
@@ -318,4 +318,4 @@ This will execute all integration tests using Jest and Supertest and display the
 ### **Explore the APIs**
 
 - **API Documentation**: [Swagger UI](https://note-vault-app.onrender.com/api-docs/)
-- **Postman Collection**: [Download Here](https://github.com/karthikdurai-kd/Speer-Backend-Assessment/blob/main/postman_collection/Speer-Backend-Assessment-Notes-API-Collection%20Production.postman_collection.json)
+- **Postman Collection**: [Download Here](https://github.com/karthikdurai-kd/Note-Vault-App/blob/main/postman_collection/Note_Vault_App_API_Collection.postman_collection.json)
