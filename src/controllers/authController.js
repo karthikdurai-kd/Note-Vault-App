@@ -24,7 +24,7 @@ const authService = require("../services/authService");
  *               username:
  *                 type: string
  *                 description: The username for the new user.
- *                 example: speer_user_1
+ *                 example: user_1
  *               password:
  *                 type: string
  *                 description: The password for the new user.
@@ -48,7 +48,7 @@ const authService = require("../services/authService");
  *                 username:
  *                   type: string
  *                   description: The username of the newly created user.
- *                   example: speer_user_1
+ *                   example: user_1
  *       400:
  *         description: Invalid data or missing fields in the request body.
  *       409:
@@ -82,7 +82,7 @@ exports.signup = async (req, res, next) => {
  *               username:
  *                 type: string
  *                 description: The username of the user.
- *                 example: speer_user_1
+ *                 example: user_1
  *               password:
  *                 type: string
  *                 description: The password of the user.

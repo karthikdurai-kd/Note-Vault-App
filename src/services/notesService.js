@@ -135,7 +135,7 @@ exports.share = async (userId, noteId, sharedWith) => {
     throw error;
   }
 
-  // Check if all user IDs exist
+  // Check if all user IDs exist in the database.
   const users = await User.find({ _id: { $in: objectIds } });
   if (users.length !== sharedWith.length) {
     const existingIds = users.map((user) => user._id.toString());

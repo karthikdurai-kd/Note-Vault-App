@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "de2825f5-4774-456a-bb7f-e601015efb7d",
-		"name": "Speer-Backend-Assessment-Notes-API-Collection Production",
+		"name": "Note_Vault_App_API_Collection",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "10674413"
 	},
@@ -76,7 +76,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3N2IwMTk0Y2I2YjVkYmI5MDhkNzVlZSIsImlhdCI6MTczNjExNDYyMywiZXhwIjoxNzM2MTE4MjIzfQ.DyT7rAoVm7NCEwJPe1B-pT4iFFkSlSlVbRUAaGyKsMo",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3N2IwMTk0Y2I2YjVkYmI5MDhkNzVlZSIsImlhdCI6MTczNjE0MzU3MiwiZXhwIjoxNzM2MTQ3MTcyfQ.Ah0JNaPK1c7nawpZvlub0eIl-e5zPRvORpI0G_8i3Bc",
 							"type": "string"
 						}
 					]
@@ -107,7 +107,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3N2IwMTk0Y2I2YjVkYmI5MDhkNzVlZSIsImlhdCI6MTczNjExNDYyMywiZXhwIjoxNzM2MTE4MjIzfQ.DyT7rAoVm7NCEwJPe1B-pT4iFFkSlSlVbRUAaGyKsMo",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3N2IwMTk0Y2I2YjVkYmI5MDhkNzVlZSIsImlhdCI6MTczNjE0MzU3MiwiZXhwIjoxNzM2MTQ3MTcyfQ.Ah0JNaPK1c7nawpZvlub0eIl-e5zPRvORpI0G_8i3Bc",
 							"type": "string"
 						}
 					]
@@ -139,7 +139,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3N2IwMTk0Y2I2YjVkYmI5MDhkNzVlZSIsImlhdCI6MTczNjExNDYyMywiZXhwIjoxNzM2MTE4MjIzfQ.DyT7rAoVm7NCEwJPe1B-pT4iFFkSlSlVbRUAaGyKsMo",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3N2IwMTk0Y2I2YjVkYmI5MDhkNzVlZSIsImlhdCI6MTczNjE0NDA1NSwiZXhwIjoxNzM2MTQ3NjU1fQ.H5eZJNqu7Rz-mirKBBdXu-h3GHQQNtOoiNGvjP3aXBE",
 							"type": "string"
 						}
 					]
@@ -148,7 +148,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"title\": \"Note 4\",\n  \"content\": \"Created for checking this note 4 in production\"\n}\n",
+					"raw": "{\n  \"title\": \"Note 5\",\n  \"content\": \"Created for checking this note 5 in production\"\n}\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -220,7 +220,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3N2IwMTk0Y2I2YjVkYmI5MDhkNzVlZSIsImlhdCI6MTczNjExNDYyMywiZXhwIjoxNzM2MTE4MjIzfQ.DyT7rAoVm7NCEwJPe1B-pT4iFFkSlSlVbRUAaGyKsMo",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3N2IwMTk0Y2I2YjVkYmI5MDhkNzVlZSIsImlhdCI6MTczNjE0NDA1NSwiZXhwIjoxNzM2MTQ3NjU1fQ.H5eZJNqu7Rz-mirKBBdXu-h3GHQQNtOoiNGvjP3aXBE",
 							"type": "string"
 						}
 					]
@@ -228,7 +228,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "https://speer-backend-assessment.onrender.com/api/notes/677b0263cb6b5dbb908d75f9",
+					"raw": "https://speer-backend-assessment.onrender.com/api/notes/677b74c5d55f5eccbd32ea6b",
 					"protocol": "https",
 					"host": [
 						"speer-backend-assessment",
@@ -238,7 +238,7 @@
 					"path": [
 						"api",
 						"notes",
-						"677b0263cb6b5dbb908d75f9"
+						"677b74c5d55f5eccbd32ea6b"
 					]
 				}
 			},

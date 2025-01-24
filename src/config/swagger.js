@@ -5,10 +5,9 @@ const swaggerOptions = {
   definition: {
     openapi: "3.0.0",
     info: {
-      title: "Notes API",
+      title: "NoteVault API",
       version: "1.0.0",
-      description:
-        "Speer Backend Assessment Project APIs for managing and searching notes",
+      description: "APIs for managing and searching notes",
     },
     components: {
       schemas: {
@@ -70,7 +69,7 @@ const swaggerOptions = {
             username: {
               type: "string",
               description: "The username of the user",
-              example: "Speer_Sample_User_1",
+              example: "Sample_User_1",
             },
             password: {
               type: "string",

@@ -1,8 +1,8 @@
-# **Speer Backend Assessment Project**
+# **Note Vault App**
 
 ### **Overview**
 
-Speer Backend Assessment Project provides secure, scalable APIs built using Node.js and Express. It enables users to create, manage, share, and search notes. Key features include user authentication, rate limiting, request throttling, and seamless integration with MongoDB for persistent data storage.
+Note Vault App provides secure, scalable APIs built using Node.js and Express. It enables users to create, manage, share, and search notes. Key features include user authentication, rate limiting, request throttling, and seamless integration with MongoDB for persistent data storage.
 
 ---
 
@@ -104,8 +104,8 @@ Speer Backend Assessment Project provides secure, scalable APIs built using Node
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/karthikdurai-kd/Speer-Backend-Assessment.git
-   cd Speer-Backend-Assessment
+   git clone https://github.com/karthikdurai-kd/Note-Vault-App.git
+   cd Note-Vault-App
    ```
 
 2. **Install dependencies**:
@@ -118,9 +118,9 @@ Speer Backend Assessment Project provides secure, scalable APIs built using Node
    Create a `.env` file at the root of the project with the following:
 
    ```plaintext
-   JWT_SECRET=speer-backend
-   MONGO_URI=mongodb://localhost:27017/speerDB
-   MONGO_URI_TEST=mongodb://localhost:27017/speerTestDB
+   JWT_SECRET=your-secret-key
+   MONGO_URI=mongodb://localhost:27017/noteVaultDB
+   MONGO_URI_TEST=mongodb://localhost:27017/noteVaultTestDB
    PORT=5001
 
    ```
@@ -137,7 +137,7 @@ Speer Backend Assessment Project provides secure, scalable APIs built using Node
 
 1. **Hosting Platform**:
 
-   - Speer Backend Assessment project APIs are deployed on **Render**.
+   - Note Vault App Project APIs are deployed on **Render**.
 
 2. **Deployment URL**:
 
@@ -163,7 +163,7 @@ Speer Backend Assessment Project provides secure, scalable APIs built using Node
 
   ```json
   {
-    "username": "speer_user_1",
+    "username": "user_1",
     "password": "Welcome@2025"
   }
   ```
@@ -174,7 +174,7 @@ Speer Backend Assessment Project provides secure, scalable APIs built using Node
   - Request body:
   ```json
   {
-    "username": "speer_user_2",
+    "username": "user_2",
     "password": "speer12#451"
   }
   ```
@@ -303,12 +303,6 @@ npm test
 This will execute all integration tests using Jest and Supertest and display the results in the terminal.
 
 <img width="642" alt="Screenshot 2025-01-04 at 10 40 03 PM" src="https://github.com/user-attachments/assets/721e2339-8922-4194-b17f-79cdf9031897" />
-
----
-
-### **Folder Structure**
-
-<img width="370" alt="Screenshot 2025-01-04 at 10 45 15 PM" src="https://github.com/user-attachments/assets/fee2a000-8cfd-40b7-89c2-900777f3b134" />
 
 ---
 
